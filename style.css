@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(100deg, #40474f, #257bdb);
+    padding: 10px;
+}
+
+.to-doapp {
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px  70px;
+    border-radius: 10px; 
+}
+
+.todo__titulo {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo__img {
+    width: 40px;
+    margin-left: 10px;
+
+}
