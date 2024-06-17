@@ -31,5 +31,66 @@ body {
 .todo__img {
     width: 40px;
     margin-left: 10px;
+}
 
+.linha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin: 30px 0;
+}
+
+.input_text {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+    font-family: "Poppins";
+    padding: 1em;
+}
+
+.botao {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #4169e1;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: "Poppins";
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer; 
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(img/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(img/checked.png);
 }
